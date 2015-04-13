@@ -7,7 +7,7 @@ Crave is an autonomous notification system which constantly learns from user act
 Download the source and edit the Crave.scala to begin.
 
 Your Crave.scala should look like something like this if you want to start the system:
-
+  ```scala
   package labs.amethyst
 
   import labs.amethyst.CraveCore._
@@ -16,3 +16,4 @@ Your Crave.scala should look like something like this if you want to start the s
     Terminal.initialize
     Terminal.?
   }
+  ```
