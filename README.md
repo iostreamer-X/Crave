@@ -17,3 +17,14 @@ Your Crave.scala should look like something like this if you want to start the s
     Terminal.?
   }
   ```
+The system is able to listen through a TCP connection on port 2148. What exactly it listens to is just numbers of Double data type. This standard is chosen because a double can very well represent time of day as hh.mm and various other types data points. The server is initialized through 
+  ```scala
+  Terminal.initialize
+  ```
+  
+To test the system you can send values through the standard TCP way by constructing a TCP client or use you can directly test it from code by making a list of values and sending it to the system like this
+  ```scala
+  var testData = List(9.0, 9.1, 9.2, 8.2, 10.11, 10.19, 10.42, 9.3, 8.4, 8.14)
+  testData.foreach(i => testData = testData.::(i + 12))		
+  testData.foreach(bufferDataSet !)
+  ```
