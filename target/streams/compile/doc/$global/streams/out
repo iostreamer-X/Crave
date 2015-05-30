@@ -1,0 +1,219 @@
+[0m[[0minfo[0m] [0mMain Scala API documentation to C:\Users\iostreamer\IdeaProjects\Crave\target\scala-2.10\api...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
+[0m[[0mdebug[0m] [0mCalling Scaladoc with arguments:[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\target\scala-2.10\api[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_25\jre\classes;C:\Users\iostreamer\.sbt\boot\scala-2.10.4\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.2-M1.jar;C:\Users\iostreamer\.ivy2\cache\com.typesafe\config\bundles\config-1.0.0.jar;C:\Users\iostreamer\.ivy2\cache\com.netflix.rxjava\rxjava-scala\jars\rxjava-scala-0.20.7.jar;C:\Users\iostreamer\.ivy2\cache\com.netflix.rxjava\rxjava-core\jars\rxjava-core-0.20.7.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\BufferDataSet.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Classify.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Clusterize.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Crave.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Server.scala[0m
+[0m[[0mdebug[0m] [0m	C:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Terminal.scala[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:12: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.classification._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:14: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.clustering._[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:16: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.core.{Dataset, DefaultDataset, DenseInstance, Instance}[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:161: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    implicit class ClusterPrinter(dataSets: Array[Dataset]) {[0m
+[0m[[31merror[0m] [0m                                                  ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:155: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    implicit class DataSetIterator(dataSet: Dataset) {[0m
+[0m[[31merror[0m] [0m                                            ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Classify.scala:13: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.core.DenseInstance[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:24: not found: type DefaultDataset[0m
+[0m[[31merror[0m] [0m    val coreDataSet = new DefaultDataset()[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala:11: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.core.Dataset[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala:16: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    case class QueryBundle(datSet: Array[Dataset], score: Double){[0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Classify.scala:25: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : bundle.datSet.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def maxBy: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from bundle.datSet.type to ?{def maxBy: ?}[0m
+[0m[[31merror[0m] [0m            val max = bundle.datSet.maxBy(_.size()).size()[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Classify.scala:26: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : bundle.datSet.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def foreach: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from bundle.datSet.type to ?{def foreach: ?}[0m
+[0m[[31merror[0m] [0m            bundle.datSet.foreach {[0m
+[0m[[31merror[0m] [0m                   ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala:12: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.core.{DefaultDataset, Dataset}[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala:29: not found: type Dataset[0m
+[0m[[31merror[0m] [0m        var close=new ListBuffer[Dataset]() //tag=average[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala:30: not found: type Dataset[0m
+[0m[[31merror[0m] [0m        val xclose=new ListBuffer[Dataset]() //tag=good[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala:28: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def classyfy(dataSets: Array[Dataset]) = {[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:42: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def farthestFirst = (dataSet: Dataset) => {[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:43: not found: type FarthestFirst[0m
+[0m[[31merror[0m] [0m        val clusterCreator = new FarthestFirst()[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:15: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.clustering.evaluation.SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:44: not found: type SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m        val sumOfSquaredError = new SumOfSquaredErrors()[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala:31: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : dataSets.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def foreach: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from dataSets.type to ?{def foreach: ?}[0m
+[0m[[31merror[0m] [0m        dataSets.foreach {[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala:21: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    case class Classified(xClose:Array[Dataset],close:Array[Dataset])[0m
+[0m[[31merror[0m] [0m                                       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala:21: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    case class Classified(xClose:Array[Dataset],close:Array[Dataset])[0m
+[0m[[31merror[0m] [0m                                                            ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala:53: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def classyfy(dataSet:Dataset):Array[Dataset]={[0m
+[0m[[31merror[0m] [0m                                        ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\ClassifyX.scala:53: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def classyfy(dataSet:Dataset):Array[Dataset]={[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Clusterize.scala:13: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.core.DefaultDataset[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Clusterize.scala:27: not found: type DefaultDataset[0m
+[0m[[31merror[0m] [0m                val dataSet = new DefaultDataset()[0m
+[0m[[31merror[0m] [0m                                  ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala:17: not found: type Dataset[0m
+[0m[[31merror[0m] [0m        def this(datSet:Array[Dataset]){[0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:13: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.classification.bayes.NaiveBayesClassifier[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:84: not found: type NaiveBayesClassifier[0m
+[0m[[31merror[0m] [0m        val classifier = new NaiveBayesClassifier(false, false, false)[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:88: not found: type DenseInstance[0m
+[0m[[31merror[0m] [0m        val instance = new DenseInstance(array, "crave")[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:94: not found: type KDtreeKNN[0m
+[0m[[31merror[0m] [0m        val classifier = new KDtreeKNN(4)[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:98: not found: type DenseInstance[0m
+[0m[[31merror[0m] [0m        val instance = new DenseInstance(array, "crave")[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:104: not found: type KNearestNeighbors[0m
+[0m[[31merror[0m] [0m        val classifier = new KNearestNeighbors(4)[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:108: not found: type DenseInstance[0m
+[0m[[31merror[0m] [0m        val instance = new DenseInstance(array, "crave")[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:114: not found: type MeanFeatureVotingClassifier[0m
+[0m[[31merror[0m] [0m        val classifier = new MeanFeatureVotingClassifier[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:118: not found: type DenseInstance[0m
+[0m[[31merror[0m] [0m        val instance = new DenseInstance(array, "crave")[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:124: not found: type NearestMeanClassifier[0m
+[0m[[31merror[0m] [0m        val classifier = new NearestMeanClassifier[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:128: not found: type DenseInstance[0m
+[0m[[31merror[0m] [0m        val instance = new DenseInstance(array, "crave")[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:134: not found: type ZeroR[0m
+[0m[[31merror[0m] [0m        val classifier = new ZeroR[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:138: not found: type DenseInstance[0m
+[0m[[31merror[0m] [0m        val instance = new DenseInstance(array, "crave")[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\Terminal.scala:39: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : query.datSet.type (with underlying type Array[<error>])[0m
+[0m[[31merror[0m] [0m required: ?{def foreach: ?}[0m
+[0m[[31merror[0m] [0mNote that implicit conversions are not applicable because they are ambiguous:[0m
+[0m[[31merror[0m] [0m both method booleanArrayOps in object Predef of type (xs: Array[Boolean])scala.collection.mutable.ArrayOps[Boolean][0m
+[0m[[31merror[0m] [0m and method byteArrayOps in object Predef of type (xs: Array[Byte])scala.collection.mutable.ArrayOps[Byte][0m
+[0m[[31merror[0m] [0m are possible conversion functions from query.datSet.type to ?{def foreach: ?}[0m
+[0m[[31merror[0m] [0m                query.datSet.foreach {[0m
+[0m[[31merror[0m] [0m                      ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala:10: not found: object net[0m
+[0m[[31merror[0m] [0mimport net.sf.javaml.clustering.evaluation.SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m       ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCaseClasses.scala:18: not found: type SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m            this(datSet,new SumOfSquaredErrors().score(datSet))[0m
+[0m[[31merror[0m] [0m                            ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:39: not found: type DenseInstance[0m
+[0m[[31merror[0m] [0m        new DenseInstance(Array(feature), tag)[0m
+[0m[[31merror[0m] [0m            ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:50: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def densityBasedSpatial = (dataSet: Dataset) => {[0m
+[0m[[31merror[0m] [0m                                        ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:51: not found: type DensityBasedSpatialClustering[0m
+[0m[[31merror[0m] [0m        val clusterCreator = new DensityBasedSpatialClustering()[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:52: not found: type SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m        val sumOfSquaredError = new SumOfSquaredErrors()[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:58: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def aqbc = (dataSet: Dataset) => {[0m
+[0m[[31merror[0m] [0m                         ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:59: not found: type AQBC[0m
+[0m[[31merror[0m] [0m        val clusterCreator = new AQBC()[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:60: not found: type SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m        val sumOfSquaredError = new SumOfSquaredErrors()[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:66: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def kMeans = (dataSet: Dataset) => {[0m
+[0m[[31merror[0m] [0m                           ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:67: not found: type KMeans[0m
+[0m[[31merror[0m] [0m        val clusterCreator = new KMeans()[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:68: not found: type SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m        val sumOfSquaredError = new SumOfSquaredErrors()[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:74: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def kMedoids = (dataSet: Dataset) => {[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:75: not found: type KMedoids[0m
+[0m[[31merror[0m] [0m        val clusterCreator = new KMedoids()[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:76: not found: type SumOfSquaredErrors[0m
+[0m[[31merror[0m] [0m        val sumOfSquaredError = new SumOfSquaredErrors()[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:143: not found: type Dataset[0m
+[0m[[31merror[0m] [0m    def generateRange(dataSets: List[Dataset]): Unit = {[0m
+[0m[[31merror[0m] [0m                                     ^[0m
+[0m[[31merror[0m] [0mC:\Users\iostreamer\IdeaProjects\Crave\src\main\scala\labs\amethyst\CraveCore.scala:156: not found: type Instance[0m
+[0m[[31merror[0m] [0m        def >(): Iterable[Instance] = {[0m
+[0m[[31merror[0m] [0m                          ^[0m
+[0m[[0minfo[0m] [0mNo documentation generated with unsucessful compiler run[0m
+[0m[[31merror[0m] [0m58 errors found[0m
+[0m[[31merror[0m] [0m(compile:[31mdoc[0m) Scaladoc generation failed[0m

@@ -31,6 +31,7 @@
     <orderEntry type="library" name="SBT: com.typesafe.akka:akka-actor_2.10:2.2-M1" level="project" />
     <orderEntry type="library" name="SBT: com.netflix.rxjava:rxjava-core:0.20.7" level="project" />
     <orderEntry type="library" name="SBT: com.netflix.rxjava:rxjava-scala:0.20.7" level="project" />
+    <orderEntry type="library" name="javaml-0.1.7" level="project" />
   </component>
 </module>
 

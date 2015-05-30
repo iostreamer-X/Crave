@@ -16,7 +16,7 @@
 [debug] == resolving dependencies for default#crave-build;0.1-SNAPSHOT [provided]
 [debug] == resolving dependencies default#crave-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.10.4 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68618007
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@67f04a15
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	typesafe-ivy-releases: revision in cache: org.scala-lang#scala-library;2.10.4
 [debug] 	found org.scala-lang#scala-library;2.10.4 in sbt-chain
@@ -1337,7 +1337,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.5!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 3887ms :: artifacts dl 110ms
+[debug] :: resolution report :: resolve 4535ms :: artifacts dl 103ms
 [debug] 	report for default#crave-build;0.1-SNAPSHOT compile produced in C:\Users\iostreamer\IdeaProjects\Crave\project\target\resolution-cache\reports\default-crave-build-compile.xml
 [debug] 	report for default#crave-build;0.1-SNAPSHOT runtime produced in C:\Users\iostreamer\IdeaProjects\Crave\project\target\resolution-cache\reports\default-crave-build-runtime.xml
 [debug] 	report for default#crave-build;0.1-SNAPSHOT test produced in C:\Users\iostreamer\IdeaProjects\Crave\project\target\resolution-cache\reports\default-crave-build-test.xml
@@ -1351,5 +1351,5 @@
 [debug] 	report for default#crave-build;0.1-SNAPSHOT docs produced in C:\Users\iostreamer\IdeaProjects\Crave\project\target\resolution-cache\reports\default-crave-build-docs.xml
 [debug] 	report for default#crave-build;0.1-SNAPSHOT pom produced in C:\Users\iostreamer\IdeaProjects\Crave\project\target\resolution-cache\reports\default-crave-build-pom.xml
 [debug] 	report for default#crave-build;0.1-SNAPSHOT scala-tool produced in C:\Users\iostreamer\IdeaProjects\Crave\project\target\resolution-cache\reports\default-crave-build-scala-tool.xml
-[debug] 	resolve done (3887ms resolve - 110ms download)
+[debug] 	resolve done (4535ms resolve - 103ms download)
 [info] Done updating.

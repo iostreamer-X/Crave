@@ -30,8 +30,7 @@ object ClassifyX {
         val xclose=new ListBuffer[Dataset]() //tag=good
         dataSets.foreach {
             dataSet =>
-                val results = clusterAlgorithms.par.map(_(dataSet))
-                val set = results.minBy(_.score).datSet
+                val set = farthestFirst(dataSet).datSet
                 val tempDataSet=new DefaultDataset()
                 set.foreach{
                     ds=>
@@ -51,9 +50,8 @@ object ClassifyX {
     /*This version receives a DataSet with single instances. This function clusterizes the data Set
     * and uses the overloaded function for optimization.Use this method to toggle between xClose and close.*/
     def classyfy(dataSet:Dataset):Array[Dataset]={
-        val results = clusterAlgorithms.par.map(_(dataSet)) //This again is one classy code. Calculates result in a parallel manner.
-        val bundle = results.minBy(_.score)
-        if(bundle.score>5)
+        val bundle = farthestFirst(dataSet)
+	    if(bundle.score>5)
             classyfy(bundle.datSet).xClose //change here to work on close.
         else
             bundle.datSet
