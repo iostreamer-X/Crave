@@ -7,11 +7,16 @@
 
 package labs.amethyst
 
+import java.text.SimpleDateFormat
+import java.util.Calendar
+
 import labs.amethyst.Clusterize._
 import labs.amethyst.CraveCaseClasses.QueryBundle
 import labs.amethyst.CraveCore._
-import rx.lang.scala.{Subscription, JavaConversions}
+import rx.lang.scala.{JavaConversions, Observable}
 import rx.schedulers.Schedulers
+
+import scala.util.Try
 
 object Terminal {
 
@@ -27,10 +32,6 @@ object Terminal {
 	*/
 
 	def getFrequencyDistribution(query: QueryBundle) = {
-
-		/*The string part of the map ie the key, tells the hour and the value ie the Map
-		tells the frequency distribution of the candidate optimum times in that hour.
-		For example "8 Map(8.01->3, 8.3-> 1, 8.45 ->7)"*/
 
 		var frequencyDistribution = Map[String, Int]()
 		query.datSet.foreach {
@@ -48,7 +49,11 @@ object Terminal {
 		frequencyDistribution
 	}
 
-	def getResults(query:QueryBundle)={
+	/*The string part of the map ie the key, tells the hour and the value ie the Map
+	tells the frequency distribution of the candidate optimum times in that hour.
+	For example "8 Map(8.01->3, 8.3-> 1, 8.45 ->7)"*/
+
+	def getResults(query: QueryBundle) = {
 		var optimus = Map[String, Map[java.lang.Double, Int]]()
 		query.datSet.foreach {
 			dataSet =>
@@ -72,15 +77,53 @@ object Terminal {
 		optimus
 	}
 
-	def ?(): Unit = {
+	def ?[A](exec: ((Seq[A]) => Unit))(arg: A*): Unit = {
 		clusterObserver
 				.observeOn(JavaConversions.javaSchedulerToScalaScheduler(Schedulers.newThread()))
 				.subscribe {
 			query =>
-				getResults(query).foreach(kv => println(kv._1 + " " + kv._2))
+				val timings = getResults(query)
+				timings.foreach {
+					hour =>
+						val bestTime = Try(hour._2.filter(_._1 > getTimeDouble()).maxBy(_._2)._1)
+						println(bestTime + " " + hour._2)
+						bestTime.foreach {
+							time =>
+								isItDone(getTimeDouble() == time).foreach {
+									done =>
+										exec(arg)
+								}
+						}
+
+				}
 
 		}
 
 	}
 
+	def getTimeDouble(): Double = {
+		new SimpleDateFormat("HH.mm").format(Calendar.getInstance().getTime()).toDouble
+	}
+
+	def newThread[A](code: => A): Unit = {
+		new Thread {
+			override def run() = {
+				code
+			}
+		}.start()
+	}
+
+	def isItDone(condition: => Boolean) = {
+		Observable[Boolean](
+			observer => {
+				newThread {
+					while (!condition) {
+						Thread.sleep(700)
+					}
+					observer.onNext(true)
+				}
+			}
+
+		)
+	}
 }

@@ -30,7 +30,7 @@ object ClassifyX {
         val xclose=new ListBuffer[Dataset]() //tag=good
         dataSets.foreach {
             dataSet =>
-                val set = farthestFirst(dataSet).datSet
+                val set = kMeans(dataSet).datSet
                 val tempDataSet=new DefaultDataset()
                 set.foreach{
                     ds=>
@@ -50,7 +50,7 @@ object ClassifyX {
     /*This version receives a DataSet with single instances. This function clusterizes the data Set
     * and uses the overloaded function for optimization.Use this method to toggle between xClose and close.*/
     def classyfy(dataSet:Dataset):Array[Dataset]={
-        val bundle = farthestFirst(dataSet)
+        val bundle = kMeans(dataSet)
 	    if(bundle.score>5)
             classyfy(bundle.datSet).xClose //change here to work on close.
         else

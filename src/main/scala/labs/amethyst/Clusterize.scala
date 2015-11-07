@@ -15,8 +15,7 @@ import rx.lang.scala.Observable
 import labs.amethyst.ClassifyX._
 
 /*Clusterize is the actor which receives an array of Double values from bufferDataSet. The actor adds the double value instance
-* to its data set and Uses ClassifyX to make optimized clusters from it. This is one of the best things I have ever come up with.
-* The actor inside an Observable pattern provides unique functionality. Every time a buffer is read, the cluster is made and
+* to its data set and Uses ClassifyX to make optimized clusters from it. Every time a buffer is read, the cluster is made and
 * and is passed onto the subscriber of the Observable.*/
 object Clusterize {
     val clusterObserver: Observable[QueryBundle] = Observable {
